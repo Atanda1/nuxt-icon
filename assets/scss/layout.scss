@@ -1,0 +1,73 @@
+.wrapper {
+  display: grid;
+  justify-content: center;
+  &__inner {
+    display: grid;
+    &__icon,
+    &__title,
+    &__select {
+      justify-self: center;
+    }
+    &__title {
+      margin-top: 8rem;
+      margin-bottom: 4rem;
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+      font-weight: 400;
+    }
+    &__select {
+      font-family: "sohne", Courier, monospace;
+    }
+  }
+  &__options {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4.8rem;
+    gap: 1rem;
+
+    &__button {
+      font-family: "sohne";
+      border: 1px solid transparent;
+      border-radius: 9.9rem;
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      padding: 0.7rem 1.5rem;
+      &__icon {
+        margin-left: 0.8rem;
+      }
+      
+      &__avi {
+        margin-right: 0.8rem;
+      }
+      &__active {
+        border: 1px solid green;
+      }
+    }
+  }
+  &__footer {
+    line-height: 2;
+    text-align: center;
+    color: #042e64;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1.6rem 0;
+    &__button {
+      font-family: "sohne", Courier, monospace;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 9.9rem;
+      width: 45%;
+      padding: 1.2rem 0;
+      font-size: 1.4rem;
+    }
+  }
+}
