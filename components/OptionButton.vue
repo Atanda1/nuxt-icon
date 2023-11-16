@@ -2,7 +2,7 @@
 import { ref } from "vue";
 const props = defineProps({
   user: {
-    type: Array,
+    type: Object,
     required: true,
   },
 });
@@ -22,7 +22,7 @@ const toggleUser = ref(false);
       class="wrapper__options__button__avi"
       :name="user.icon"
     />
-    {{ user.username }}
+    {{ user.name }}
     <Icon
       v-if="!toggleUser"
       size="1.5em"
