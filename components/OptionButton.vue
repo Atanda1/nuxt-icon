@@ -1,12 +1,12 @@
 <script setup>
 import { ref } from "vue";
 const props = defineProps({
-  user: {
+  category: {
     type: Object,
     required: true,
   },
 });
-const { user } = props;
+const { category } = props;
 const toggleUser = ref(false);
 </script>
 <template>
@@ -20,20 +20,18 @@ const toggleUser = ref(false);
     <Icon
       size="1.5em"
       class="wrapper__options__button__avi"
-      :name="user.icon"
+      :name="category.icon"
     />
-    {{ user.name }}
+    {{ category.name }}
     <Icon
       v-if="!toggleUser"
-      size="1.5em"
-      class="wrapper__options__button__plus"
+      size="1.5em"      
       name="clarity:plus-line"
     />
 
     <Icon
       v-else
       size="1.5em"
-      class="wrapper__options__button__plus"
       name="iconamoon:check-light"
       color="green"
     />

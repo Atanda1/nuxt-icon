@@ -17,7 +17,7 @@ import { categories } from "/data/items-list.js";
     </div>
     <div class="wrapper__options">
       <div :key="category.id" v-for="category in categories">
-        <OptionButton :user="category" />
+        <OptionButton :category="category" />
       </div>
     </div>
     <div class="wrapper__footer">
